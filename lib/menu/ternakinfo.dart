@@ -58,7 +58,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['nama_peternakan'],
                       style: TextStyle(
                         fontSize: 16,
@@ -83,7 +83,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['jekel'],
                       style: TextStyle(
                         fontSize: 16,
@@ -107,7 +107,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['umur'],
                       style: TextStyle(
                         fontSize: 16,
@@ -131,7 +131,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['pendidikan'],
                       style: TextStyle(
                         fontSize: 16,
@@ -155,7 +155,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['tanggungan_keluarga'],
                       style: TextStyle(
                         fontSize: 16,
@@ -179,7 +179,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['status_ternak'],
                       style: TextStyle(
                         fontSize: 16,
@@ -203,7 +203,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['pengalaman_beternak'],
                       style: TextStyle(
                         fontSize: 16,
@@ -227,7 +227,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['status_lahan'],
                       style: TextStyle(
                         fontSize: 16,
@@ -251,7 +251,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['alamat'],
                       style: TextStyle(
                         fontSize: 16,
@@ -275,7 +275,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['modal_tetap'],
                       style: TextStyle(
                         fontSize: 16,
@@ -299,7 +299,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['tenaga_kerja'],
                       style: TextStyle(
                         fontSize: 16,
@@ -323,7 +323,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['bibit_sapi'],
                       style: TextStyle(
                         fontSize: 16,
@@ -347,7 +347,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['penghasilan'],
                       style: TextStyle(
                         fontSize: 16,
@@ -371,7 +371,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['mutasi_ternak'],
                       style: TextStyle(
                         fontSize: 16,
@@ -395,7 +395,7 @@ class _ternakinfoState extends State<ternakinfo> {
                         decoration: TextDecoration.none,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       widget.list[widget.index]['permasalahan'],
                       style: TextStyle(
                         fontSize: 16,
@@ -446,6 +446,26 @@ class _ternakinfoState extends State<ternakinfo> {
                             },
                           ),
                         ],
+                      ),
+                    ),
+                    Text(
+                      "Tanggal Data Diinputkan : ",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontFamily: 'SF Pro Text',
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w500,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
+                    Text(
+                      widget.list[widget.index]['tanggal'],
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black54,
+                        fontFamily: 'SF Pro Text',
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w400,
                       ),
                     ),
                   ],

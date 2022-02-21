@@ -138,7 +138,7 @@ class Itemlist extends StatelessWidget {
               itemCount: list == null ? 0 : list.length,
               itemBuilder: (context, i) {
                 return Container(
-                  child: SingleChildScrollView(
+                  child: SafeArea(
                     child: Column(
                       children: [
                         GestureDetector(

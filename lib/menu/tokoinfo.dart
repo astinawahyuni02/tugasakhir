@@ -62,7 +62,7 @@ class _tokoinfoState extends State<tokoinfo> {
                           decoration: TextDecoration.none,
                         ),
                       ),
-                      Text(
+                      SelectableText(
                         widget.list[widget.index]['nama_toko'],
                         style: TextStyle(
                           fontSize: 14,
@@ -83,7 +83,7 @@ class _tokoinfoState extends State<tokoinfo> {
                           decoration: TextDecoration.none,
                         ),
                       ),
-                      Text(
+                      SelectableText(
                         widget.list[widget.index]['alamat'],
                         textAlign: TextAlign.justify,
                         style: TextStyle(
@@ -106,7 +106,7 @@ class _tokoinfoState extends State<tokoinfo> {
                           decoration: TextDecoration.none,
                         ),
                       ),
-                      Text(
+                      SelectableText(
                         widget.list[widget.index]['keterangan'],
                         textAlign: TextAlign.justify,
                         style: TextStyle(
@@ -117,46 +117,46 @@ class _tokoinfoState extends State<tokoinfo> {
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                      Divider(thickness: 2),
-                      Text(
-                        "Google Maps",
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontFamily: 'SF Pro Text',
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w500,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text('Tekan gambar dibawah ini :'),
-                      Container(
-                        color: Colors.white,
-                        height: 200,
-                        // width: 375,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            GestureDetector(
-                              child: ImageIcon(
-                                AssetImage(
-                                  "assets/images/gmaps.png",
-                                ),
-                                size: 100,
-                                color: Colors.blue,
-                              ),
-                              onTap: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => maps()));
-                              },
-                            ),
-                          ],
-                        ),
-                      ),
+                      // Divider(thickness: 2),
+                      // Text(
+                      //   "Google Maps",
+                      //   style: TextStyle(
+                      //     fontSize: 14,
+                      //     fontFamily: 'SF Pro Text',
+                      //     fontStyle: FontStyle.normal,
+                      //     fontWeight: FontWeight.w500,
+                      //     decoration: TextDecoration.none,
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: 10,
+                      // ),
+                      // Text('Tekan gambar dibawah ini :'),
+                      // Container(
+                      //   color: Colors.white,
+                      //   height: 200,
+                      //   // width: 375,
+                      //   child: Row(
+                      //     mainAxisAlignment: MainAxisAlignment.center,
+                      //     children: [
+                      //       GestureDetector(
+                      //         child: ImageIcon(
+                      //           AssetImage(
+                      //             "assets/images/gmaps.png",
+                      //           ),
+                      //           size: 100,
+                      //           color: Colors.blue,
+                      //         ),
+                      //         onTap: () {
+                      //           Navigator.push(
+                      //               context,
+                      //               MaterialPageRoute(
+                      //                   builder: (context) => maps()));
+                      //         },
+                      //       ),
+                      //     ],
+                      //   ),
+                      // ),
                     ],
                   ))
             ],

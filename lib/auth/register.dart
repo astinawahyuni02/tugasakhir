@@ -17,6 +17,8 @@ class _registerState extends State<register> {
   bool isLoading = false;
   bool _isHidePassword = true;
 
+  var auth_service;
+
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
   Future<void> registerUser() async {
     try {
@@ -121,7 +123,8 @@ class _registerState extends State<register> {
               return 'Tidak boleh kosong';
             }
             return null;
-          },controller: email,
+          },
+          controller: email,
           keyboardType: TextInputType.text,
           decoration: InputDecoration(
             hintText: 'masukan email',
@@ -206,6 +209,10 @@ class _registerState extends State<register> {
                   ),
                 ),
                 onPressed: () async {
+                  // SignInSignUpResult result = await AuthSercive().createUser(
+                  //     email: email.text,
+                  //     pass: password.text);
+
                   if (formKey.currentState.validate()) {
                     await registerUser();
                   } else {

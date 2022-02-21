@@ -14,10 +14,10 @@ class _splashscreenState extends State<splashscreen> {
   @override
   void initState(){
     super.initState();
-    startSplashScreen();
+    onSession();
   }
 
-  void startSplashScreen() async {
+  void onSession() async {
     Future.delayed(Duration(seconds: 3), () {
       sessionManager.getPreferences().then((value) {
         if (value == 200) {

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:email_auth/email_auth.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:tugasakhir/helper/session_manager.dart';
@@ -30,8 +31,17 @@ class _loginState extends State<login> {
 
       print(data);
       if (data['status'] == 200) {
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => Pagehome()));
+        setState(() {
+          isLoading = false;
 
+          int Status = data['status'];
+          String Email = email.text;
+          String id = data['user']['id_user'];
+          sessionManager.savePreferences(Status, Email, id);
+
+          Navigator.pushReplacement(
+              context, MaterialPageRoute(builder: (_) => Pagehome()));
+        });
       } else {
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text('${data['message']}'),

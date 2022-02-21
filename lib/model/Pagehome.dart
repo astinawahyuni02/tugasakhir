@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tugasakhir/example.dart';
+import 'package:tugasakhir/menu/profile.dart';
 import 'package:tugasakhir/menu/ternak.dart';
 import 'package:tugasakhir/menu/toko.dart';
 
 import '../menu/info.dart';
-
-// void main() {
-//   runApp(MaterialApp(
-//     title: 'Sapi',
-//   ));
-// }
 
 class Pagehome extends StatefulWidget {
   @override
@@ -25,8 +20,8 @@ class _PagehomeState extends State<Pagehome> {
     ternak(),
     toko(),
     info(),
-    // profile(),
-    DataPasien(),
+    profile(),
+    // DataPasien(),
   ];
 
   void _onItemTapped(int index) {

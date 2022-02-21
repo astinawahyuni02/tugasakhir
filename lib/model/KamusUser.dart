@@ -39,6 +39,7 @@ class Tabeluser {
     this.fullname,
     this.password,
     this.tanggal,
+    this.isActive,
   });
 
   String idUser;
@@ -46,6 +47,7 @@ class Tabeluser {
   String fullname;
   String password;
   DateTime tanggal;
+  String isActive;
 
   factory Tabeluser.fromJson(Map<String, dynamic> json) => Tabeluser(
     idUser: json["id_user"] == null ? null : json["id_user"],
@@ -53,6 +55,7 @@ class Tabeluser {
     fullname: json["fullname"] == null ? null : json["fullname"],
     password: json["password"] == null ? null : json["password"],
     tanggal: json["tanggal"] == null ? null : DateTime.parse(json["tanggal"]),
+    isActive: json["is_active"] == null ? null : json["is_active"],
   );
 
   Map<String, dynamic> toJson() => {
@@ -61,5 +64,6 @@ class Tabeluser {
     "fullname": fullname == null ? null : fullname,
     "password": password == null ? null : password,
     "tanggal": tanggal == null ? null : tanggal.toIso8601String(),
+    "is_active": isActive == null ? null : isActive,
   };
 }
